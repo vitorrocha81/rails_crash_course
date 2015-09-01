@@ -1,0 +1,7 @@
+<p><%= comment.author %> said:</p>
+
+<blackquote>
+<%= comment.body %>
+<%= link_to 'Destroy', [comment.post, comment],
+method: :delete, data: { confirm: 'Delete?' } %>
+</blackquote>
